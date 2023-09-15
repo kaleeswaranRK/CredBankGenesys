@@ -1,0 +1,11 @@
+ComposerProject.WAR.DisplayName=Composer Generated Application
+ComposerProject.codegen.mode=DEBUG
+ComposerProject.icm.enabled=false
+ComposerProject.locale.default=en_US
+ComposerProject.locales=en_US
+ComposerProject.locales.custom=
+ComposerProject.routing.logLevel.default=Error
+ComposerProject.voice.logLevel.default=Error
+Voice_Project_Audio_Encoding=ULAW
+Voice_Project_Audio_File_Type=WAV
+eclipse.preferences.version=1

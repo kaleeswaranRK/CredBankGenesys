@@ -1,0 +1,56 @@
+<%@page session="false" %>
+<%@page import="org.json.JSONObject"%>
+<%@page import="com.genesyslab.studio.backendlogic.GVPHttpRequestProcessor"%>
+<%@page import="java.util.Map"%>
+<%-- <%@page import="org.apache.logging.log4j.Logger"%> --%>
+<%-- <%@page import="com.genesyslab.studio.backendlogic.BackendLogManager"%> --%>
+<%!
+/* public JSONObject performLogic(JSONObject state, Map<String, String> additionalParams)
+{
+    return new JSONObject();
+} */
+%>
+<%
+response.setHeader("Cache-Control", "no-cache");
+/* response.addHeader("X-Frame-Options", "DENY"); */     // Setting the "DENY" Flag on response object to restrict browsers that support this header from allowing embedding web-pages in a frame
+
+ /* Logger logger = BackendLogManager.getLogger("backEnd"); */
+String output = null; 
+
+try {
+    // process the post data
+    GVPHttpRequestProcessor processor = new GVPHttpRequestProcessor(request);
+    processor.parseRequest();
+    
+    // "state" encapsulates the state variable submitted by the VXML page
+    JSONObject state = processor.getState();
+    
+    // additional parameters that were passed in the namelist
+    Map<String, String> additionalParams = processor.getAdditionalParams();
+    
+    // perform the logic
+    JSONObject result = performLogic(state, additionalParams);
+    
+    output = result.toString();
+    
+    out.print(output);
+    /* logger.info("Output: " + output); */
+    
+} catch (Exception e) {
+    
+    //Removed the call to 'e.printstacktrace()' as printing the stack trace of an exception is a bad practice.
+    
+    //String msg = e.getMessage();
+    //if (null != msg){
+    //    msg = msg.replace('"', '\'');
+    //}
+    
+     e.printStackTrace();
+        String msg = e.getMessage();
+        if (null != msg){
+            msg = msg.replace('"', '\'');
+        }
+    out.print("An error has occured in the custom backend JSP file");
+    /* logger.error("An error has occured in the custom backend JSP file"); */
+}
+%>

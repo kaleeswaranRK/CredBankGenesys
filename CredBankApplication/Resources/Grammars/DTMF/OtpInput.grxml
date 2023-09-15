@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="dtmf" version="1.0" root="division">
+    <rule scope="public" id="division">
+      <item repeat="1-6">
+   <ruleref uri="#numbers_1to4"/>
+   <tag>out += rules.numbers_1to4;</tag> 
+  </item>
+</rule>
+
+
+<rule id="numbers_1to4">
+    <one-of>
+      <item>1<tag>out = "1"</tag></item>
+      <item>2<tag>out = "2"</tag></item>
+      <item>3<tag>out = "3"</tag></item>
+      <item>4<tag>out = "4"</tag></item>
+      <item>5<tag>out = "5"</tag></item>
+      <item>6<tag>out = "6"</tag></item>
+      <item>7<tag>out = "7"</tag></item>
+      <item>8<tag>out = "8"</tag></item>
+      <item>0<tag>out = "0"</tag></item>
+      <item>9<tag>out = "9"</tag></item>
+      <item>*<tag>out = "*"</tag></item>
+      
+     </one-of>
+  </rule>
+</grammar>

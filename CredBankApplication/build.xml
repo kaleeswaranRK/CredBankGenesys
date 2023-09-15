@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="create-war" name="Deploy From VoiceProject">
+  <target name="clean">
+    <delete dir="target" failonerror="false" />
+  </target>
+  <target depends="clean" name="create-war">
+    <war destfile="target/CredBank.war" duplicate="fail" webxml="./WEB-INF/web.xml">
+      <fileset dir="./" excludes="target/* target/*/* Callflows/* Workflows/* Interaction*/* debugging-results/*/* .project .settings/* **/web.xml">
+        <exclude name="**/*.callflow" />
+        <exclude name="**/*.workflow" />
+        <exclude name="**/*.ixnprocess" />
+      </fileset>
+    </war>
+  </target>
+</project>
