@@ -173,12 +173,12 @@
 			appSession.put(GlobalConstant.TWOFA, "NA");
 			appSession.put(GlobalConstant.VERIFIEDBY, "NA");
 			appSession.put(GlobalConstant.IDENTIFIED_BY, "NA");
-			appSession.put(GlobalConstant.MENUTRAVERSE, "NA");
 			appSession.put(GlobalConstant.CHANNEL, "IVR");
 			appSession.put(GlobalConstant.INVOLUNTARYREASON, "NA");
 			appSession.put(GlobalConstant.AGENTID, "NA");
 			appSession.put(GlobalConstant.DISCONNECTREASON, "SUCCESS");
 			appSession.put(GlobalConstant.MOBILE, "NA");
+			appSession.put(GlobalConstant.MENUTRAVERSE, "START");
 			debugLogger.debug(loggingCommonFormat + "AppSession End Value : " + appSession);
 
 			debugLogger.debug(loggingCommonFormat + "****************Init Properties Exit **************************");

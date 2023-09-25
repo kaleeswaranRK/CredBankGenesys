@@ -290,7 +290,7 @@
     <children xmi:type="notation:Shape" xmi:id="_RRjskD3PEe6Vkduj4b6WIQ" type="1001" element="_RRbwwD3PEe6Vkduj4b6WIQ" fontName="Segoe UI">
       <children xmi:type="notation:DecorationNode" xmi:id="_RRkToD3PEe6Vkduj4b6WIQ" type="4001"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_RRkToT3PEe6Vkduj4b6WIQ" type="4002"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RRjskT3PEe6Vkduj4b6WIQ" x="-50" y="600"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RRjskT3PEe6Vkduj4b6WIQ" x="-42" y="600"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_lKS8ID3QEe6Vkduj4b6WIQ" type="1005" element="_lKRuAD3QEe6Vkduj4b6WIQ" fontName="Segoe UI">
       <children xmi:type="notation:DecorationNode" xmi:id="_lKTjMD3QEe6Vkduj4b6WIQ" type="4006"/>

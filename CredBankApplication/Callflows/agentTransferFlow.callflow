@@ -72,10 +72,10 @@
     <blocks xmi:type="gvp:EcmaScriptBlock" xmi:id="_pxYnoEuoEe6cm-6c_Q4LMQ" name="error_ASSIGN" condition="" category="ECMA Script" script="try {&#xD;&#xA;AppState.appSession.DISCONNECTREASON='ERROR';&#xD;&#xA;AppState.appSession.INVOLUNTARYREASON=='EXCEPTION';&#xD;&#xA;} catch (error) {&#xD;&#xA;&#x9;System.out.Println(&quot;Exception while send &quot;+error);&#xD;&#xA;}"/>
     <blocks xmi:type="gvp:EcmaScriptBlock" xmi:id="_pxYnoUuoEe6cm-6c_Q4LMQ" name="allError_ASSIGN" condition="" category="ECMA Script" script="try {&#xD;&#xA;AppState.appSession.DISCONNECTREASON='AllERROR';&#xD;&#xA;AppState.appSession.INVOLUNTARYREASON=='EXCEPTION';&#xD;&#xA;} catch (error) {&#xD;&#xA;&#x9;System.out.Println(&quot;Exception while send&quot;+error);&#xD;&#xA;}"/>
     <blocks xmi:type="gvp:InteractionDataBlock" xmi:id="_JKTBAEy2Ee65Hpev98-buA" name="InteractionData1" category="Interaction Data" operation="put">
-      <values xmi:type="datatypes_1:CTICVariable" xmi:id="_4MNA0Ey4Ee65Hpev98-buA" name="preferLanguage" value="''" description="Enter Description" type="User" dataType="User Data"/>
-      <values xmi:type="datatypes_1:CTICVariable" xmi:id="_4MNA0Uy4Ee65Hpev98-buA" name="ANI" value="getANI()" description="ANI associated with the calling party." type="System" dataType="User Data"/>
-      <values xmi:type="datatypes_1:CTICVariable" xmi:id="_4MNA0ky4Ee65Hpev98-buA" name="DNIS" value="getDNIS()" description="DNIS associated with Called phone number" type="System" dataType="User Data"/>
-      <values xmi:type="datatypes_1:CTICVariable" xmi:id="_4MNA00y4Ee65Hpev98-buA" name="ONEFA" value="''" description="Enter Description" type="User" dataType="User Data"/>
+      <values xmi:type="datatypes_1:CTICVariable" xmi:id="_FahKgFkVEe6PGKnpdEX00Q" name="preferLanguage" value="''" description="Enter Description" type="User" dataType="User Data"/>
+      <values xmi:type="datatypes_1:CTICVariable" xmi:id="_FahKgVkVEe6PGKnpdEX00Q" name="ANI" value="getANI()" description="ANI associated with the calling party." type="System" dataType="User Data"/>
+      <values xmi:type="datatypes_1:CTICVariable" xmi:id="_FahKglkVEe6PGKnpdEX00Q" name="DNIS" value="getDNIS()" description="DNIS associated with Called phone number" type="System" dataType="User Data"/>
+      <values xmi:type="datatypes_1:CTICVariable" xmi:id="_FahKg1kVEe6PGKnpdEX00Q" name="ONEFA" value="''" description="Enter Description" type="User" dataType="User Data"/>
     </blocks>
     <blocks xmi:type="gvp:TransferBlock" xmi:id="_NpdT8Ey2Ee65Hpev98-buA" name="AgentTransfer" category="Transfer" userInput="true" destination="5000" maxCallDuration="300" connectTimeout="100" connectWhen="Answered"/>
     <links xmi:type="gvp:CallflowOutputLink" xmi:id="_T2xB4DzrEe60lo197SvtRQ" fromBlock="_0TDncMlhEeKE2tP5OBlA8w" toBlock="_Stz1wDzrEe60lo197SvtRQ"/>
@@ -179,7 +179,7 @@
     <children xmi:type="notation:Shape" xmi:id="_Npd7AEy2Ee65Hpev98-buA" type="1007" element="_NpdT8Ey2Ee65Hpev98-buA" fontName="Segoe UI">
       <children xmi:type="notation:DecorationNode" xmi:id="_Npd7Aky2Ee65Hpev98-buA" type="4010"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_Npd7A0y2Ee65Hpev98-buA" type="4011"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Npd7AUy2Ee65Hpev98-buA" x="235" y="840"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Npd7AUy2Ee65Hpev98-buA" x="210" y="840"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_RF4M8oobEeG_nt9_QYQUcg"/>
     <edges xmi:type="notation:Connector" xmi:id="_T2yQADzrEe60lo197SvtRQ" type="3001" element="_T2xB4DzrEe60lo197SvtRQ" source="_0VP_0MlhEeKE2tP5OBlA8w" target="_StzOsDzrEe60lo197SvtRQ" roundedBendpointsRadius="10" routing="Rectilinear" closestDistance="true" lineColor="16711680">
@@ -210,10 +210,10 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_fHm4MEJ2Ee6mB4qZVxZeLQ" type="3001" element="_fHgxkEJ2Ee6mB4qZVxZeLQ" source="_GAopMEAEEe6Rr7EJo7vCQg" target="_6_6RQEAEEe6Rr7EJo7vCQg" roundedBendpointsRadius="10" routing="Rectilinear" closestDistance="true" lineColor="16711680">
       <children xmi:type="notation:DecorationNode" xmi:id="_fHm4M0J2Ee6mB4qZVxZeLQ" type="4074">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_fHm4NEJ2Ee6mB4qZVxZeLQ" x="36" y="-84"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fHm4NEJ2Ee6mB4qZVxZeLQ" x="38" y="10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_fHm4MUJ2Ee6mB4qZVxZeLQ" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fHm4MkJ2Ee6mB4qZVxZeLQ" points="[13, 7, -172, -87]$[185, 93, 0, -1]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fHm4MkJ2Ee6mB4qZVxZeLQ" points="[0, 25, -180, -101]$[0, 59, -180, -67]$[180, 59, 0, -67]$[180, 101, 0, -25]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fHoGUEJ2Ee6mB4qZVxZeLQ" id="(0.4909090909090909,0.86)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fHoGUUJ2Ee6mB4qZVxZeLQ" id="(0.6272727272727273,0.02)"/>
     </edges>

@@ -6,8 +6,6 @@
 
 	<!-- Composer Application Root Document -->
 	<!-- Add Application Root Variables here"/-->
-	
-	<var name="root1" expr=''/>
 	<form></form>
 	
 </vxml>

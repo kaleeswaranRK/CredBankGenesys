@@ -58,7 +58,8 @@ public JSONObject performLogic(JSONObject state, Map<String, String> additionalP
     		  appSession.put("relID",relID);
     		  Map<String, Object> inParams = new HashMap<String, Object>();
     		    inParams.put("cli", ANI);
-    		    inParams.put("sessionId", appSession.getString("ucid"));
+    		    inParams.put("sessionId",sessionID);
+    		    debugLogger.debug(loggingCommonFormat + "DB request : "+ inParams);
     		    PrefereredLangCode_Res prefereredLangCode_Res = dbController.getPreferredLanguageBasedOnCLI(inParams);
     		    debugLogger.debug(loggingCommonFormat + "DB ErrorCode : "+ prefereredLangCode_Res.getErrorcode());
     			  debugLogger.debug(loggingCommonFormat + "DB ErrorMessage : "+   prefereredLangCode_Res.getErrormessage());
